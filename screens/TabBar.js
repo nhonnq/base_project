@@ -9,8 +9,12 @@ import {
 
 import { TabNavigator } from 'react-navigation';
 
+import GLOBAL from '../Globals'
+
 import Home from './Home';
 import Profile from './Profile';
+
+
 
 var TabBar = TabNavigator({
     Home: { screen: Home },
@@ -24,9 +28,9 @@ var TabBar = TabNavigator({
             showIcon: true,
             showLabel: false,
             activeTintColor: 'white',
-            activeBackgroundColor: 'darkgreen',
-            inactiveTintColor: 'black',
-            inactiveBackgroundColor: 'green',
+            activeBackgroundColor: GLOBAL.COLOR.PRIMARY,
+            inactiveTintColor: 'darkgray',
+            inactiveBackgroundColor: GLOBAL.COLOR.PRIMARY,
             labelStyle: {
                 fontSize: 12,
                 padding: 0
