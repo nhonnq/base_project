@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\react-native\\projects\\BaseProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "C:\\react-native\\projects\\BaseProject\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\nhonn\\Documents\\personal_projects\\my-profile\\react\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\nhonn\\Documents\\personal_projects\\my-profile\\react\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nhonnq\\Documents\\personal_projects\\my-profile\\react\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\nhonnq\\Documents\\personal_projects\\my-profile\\react\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]

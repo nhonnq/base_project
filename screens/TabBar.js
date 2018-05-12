@@ -7,16 +7,21 @@ import {
     View
 } from 'react-native';
 
+import GLOBAL from '../Globals'
+
 import { TabNavigator } from 'react-navigation';
 
+import Vocabulary from './Vocabulary';
 import Home from './Home';
 import Profile from './Profile';
+import Exercise from './Exercise';
 
 var TabBar = TabNavigator({
-    Home: { screen: Home },
+    Vocabulary: { screen: Vocabulary },
     Profile: { screen: Profile },
+    Exercise: { screen: Exercise },
 }, {
-        initialRouteName: 'Home',
+        initialRouteName: 'Vocabulary',
         tabBarPosition: 'bottom',
         animationEnabled: true,
         swipeEnabled: false,
@@ -35,7 +40,8 @@ var TabBar = TabNavigator({
                 backgroundColor: 'transparent'
             },
             style: {
-                height: 50
+                height: 50,
+                backgroundColor: GLOBAL.COLOR.PRIMARY,
             }
         }
     }

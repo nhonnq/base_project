@@ -11,7 +11,12 @@ import {
     View,
     Image,
     FlatList,
+    TouchableOpacity,
 } from 'react-native';
+
+import {
+    StackNavigator, NavigationActions
+} from 'react-navigation'
 
 export default class Profile extends React.Component {
 
@@ -24,6 +29,23 @@ export default class Profile extends React.Component {
                 style={[commonStyle.tabbar_icon, { tintColor: tintColor }]} />
         ),
     };
+
+    resetAction = NavigationActions.reset({
+        index: 0,
+        actions: [
+            NavigationActions.navigate({ routeName: 'Login' })
+        ]
+    })
+
+    goDetail(menu) {
+        if (menu.key == 'edit_profile') {
+
+        } else if (menu.key == 'settings') {
+
+        } else if (menu.key == 'logout') {
+            this.props.navigation.dispatch(this.resetAction)
+        }
+    }
 
     render() {
 
@@ -69,7 +91,11 @@ export default class Profile extends React.Component {
                 <View style={styles.view_content}>
                     <FlatList
                         data={menus}
-                        renderItem={({ item }) => <MenuItem rowData={item} itemHeight={60} />} />
+                        renderItem={({ item }) =>
+                            <TouchableOpacity onPress={() => this.goDetail(item)}>
+                                <MenuItem rowData={item} itemHeight={60} />
+                            </TouchableOpacity>
+                        } />
                 </View>
             </View>
         );

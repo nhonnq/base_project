@@ -2,7 +2,8 @@ module.exports = {
     STORE_KEY: 'a56z0fzrNpl^2',
     BASE_URL: 'http://dev1.smart.net.vn/nhon/base_project/public/',
     COLOR: {
-      PRIMARY: '#1DD1FF',
+      PRIMARY: '#009688',
+      GRAY: '#666666',
       BG_TEXT: '#D3E4F4',
       BG: '#F9FCFF',
       TEXT: '#3A4D63',

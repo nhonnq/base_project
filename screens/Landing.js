@@ -17,7 +17,7 @@ import {
 import * as Progress from 'react-native-progress';
 import IconFA from 'react-native-vector-icons/FontAwesome';
 
-const timeOut = 100;
+const timeOut = 10;
 
 export default class Landing extends Component {
     constructor(props) {
